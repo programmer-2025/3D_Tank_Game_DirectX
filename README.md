@@ -1,8 +1,8 @@
-
 # 概要
+* 3Dのタンク（戦車）ゲームです。
 
-# ライセンス
-* MIT License
+# 動作イメージ
 
-# ライブラリ
-* ImGUI
+# ライブラリ・素材
+* ImGUI - MIT License
+* Blender
