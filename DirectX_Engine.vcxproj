@@ -156,6 +156,7 @@
     <ClCompile Include="Engine\SceneManager.cpp" />
     <ClCompile Include="Engine\Texture.cpp" />
     <ClCompile Include="Engine\Triangle.cpp" />
+    <ClCompile Include="Ground.cpp" />
     <ClCompile Include="ImGUI\imgui.cpp" />
     <ClCompile Include="ImGUI\imgui_demo.cpp" />
     <ClCompile Include="ImGUI\imgui_draw.cpp" />
@@ -188,6 +189,7 @@
     <ClInclude Include="Engine\Texture.h" />
     <ClInclude Include="Engine\Triangle.h" />
     <ClInclude Include="GameEngine.hpp" />
+    <ClInclude Include="Ground.h" />
     <ClInclude Include="ImGUI\imconfig.h" />
     <ClInclude Include="ImGUI\imgui.h" />
     <ClInclude Include="ImGUI\imgui_impl_android.h" />

@@ -87,6 +87,9 @@
     <ClCompile Include="Engine\Box.cpp">
       <Filter>Engine\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGUI\imgui.h">
@@ -182,6 +185,9 @@
     <ClInclude Include="Engine\Box.h">
       <Filter>Engine\Object</Filter>
     </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -204,6 +210,12 @@
     </Filter>
     <Filter Include="Engine\Scene">
       <UniqueIdentifier>{501adf3f-be7b-482f-84fe-f81ab2ceef17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b619bc43-2537-4fac-a11a-c10fe1f2cb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object">
+      <UniqueIdentifier>{4b4a0a5a-de6f-44c1-a8dd-af05fc734ba5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

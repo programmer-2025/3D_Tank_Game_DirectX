@@ -6,6 +6,7 @@
 #include "FBX.h"
 #include "Box.h"
 #include "SceneManager.h"
+#include "../Ground.h"
 
 BootScene::BootScene()
 	: BaseScene("BootScene") {
@@ -27,8 +28,10 @@ void BootScene::Init() {
 	};
 	//ObjectManager::AddObject(new Triangle(color, vertexPos));
 	//ObjectManager::AddObject(new Image("test.PNG", 64, 64));
-	//ObjectManager::AddObject(new FBX("Oden.fbx"));
+	ObjectManager::AddObject(new FBX("Oden.fbx"));
 	//ObjectManager::AddObject(new Box(Color::GetRed(), 64, 64));
+
+	ObjectManager::AddObject(new Ground());
 }
 
 void BootScene::Update() {
