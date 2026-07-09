@@ -7,6 +7,7 @@
 #include "Box.h"
 #include "SceneManager.h"
 #include "../Ground.h"
+#include "../Tank.h"
 
 BootScene::BootScene()
 	: BaseScene("BootScene") {
@@ -32,6 +33,7 @@ void BootScene::Init() {
 	//ObjectManager::AddObject(new Box(Color::GetRed(), 64, 64));
 
 	ObjectManager::AddObject(new Ground());
+	ObjectManager::AddObject(new Tank());
 }
 
 void BootScene::Update() {

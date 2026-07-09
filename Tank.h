@@ -2,18 +2,18 @@
 #include "Engine/BaseObject.h"
 #include "Engine/FBX.h"
 
-class Ground : public BaseObject {
+class Tank : public BaseObject {
 private:
 	FBX* fbx_;
 public:
 
-	Ground();
-	~Ground();
+	Tank();
+	~Tank();
 
 	void Init() override;
 	void Update() override;
 	void Draw() override;
 	void Release() override;
 
-	FBX* GetFBX() { return fbx_; }
 };
+

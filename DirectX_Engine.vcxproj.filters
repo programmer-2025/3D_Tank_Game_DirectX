@@ -90,6 +90,9 @@
     <ClCompile Include="Ground.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGUI\imgui.h">
@@ -186,6 +189,9 @@
       <Filter>Engine\Object</Filter>
     </ClInclude>
     <ClInclude Include="Ground.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
       <Filter>Source\Object</Filter>
     </ClInclude>
   </ItemGroup>

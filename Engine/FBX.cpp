@@ -252,7 +252,9 @@ bool FBX::Raycast(FBX* fbx, DirectX::XMFLOAT3 rayPos, DirectX::XMFLOAT3 rayDir, 
 	auto rayOrigin = DirectX::XMLoadFloat3(&rayPos);
 	auto rayDirection = DirectX::XMLoadFloat3(&rayDir);
 
+	rayDirection = XMVector3Normalize(rayDirection);
 	bool hit = false;
+	float minDistance = FLT_MAX;
 
 	for (int v = 0; v < fbx->vertexCount_; v += 3) {
 		auto vertex0 = DirectX::XMLoadFloat3(&fbx->vertices_[v].postion);
@@ -272,9 +274,15 @@ bool FBX::Raycast(FBX* fbx, DirectX::XMFLOAT3 rayPos, DirectX::XMFLOAT3 rayDir, 
 			vertex2,
 			dis))
 		{
-			distance = dis;
-			hit = true;
+			if (dis > 0.0f && dis < minDistance) {
+				minDistance = dis;
+				hit = true;
+			}
 		}
+	}
+
+	if (hit) {
+		distance = minDistance;
 	}
 
 	return hit;
