@@ -53,6 +53,7 @@ namespace DirectX3DManager {
 	ID3D11Texture2D* GetTexture2D();
 	ID3D11RasterizerState* GetRasterizer();
 	ID3D11DepthStencilView* GetDepthView();
+	ID3D11DepthStencilState* GetDepthState();
 
 }
 

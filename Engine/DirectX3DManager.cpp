@@ -141,6 +141,11 @@ namespace DirectX3DManager {
 		return pDepthStencilView;
 	}
 
+	ID3D11DepthStencilState* GetDepthState()
+	{
+		return depthState_;
+	}
+
 }
 
 namespace ShaderManager {
