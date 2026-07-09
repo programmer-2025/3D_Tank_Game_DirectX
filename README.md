@@ -1,8 +1,8 @@
 # 概要
 * 3Dのタンク（戦車）ゲームです。
 
-# 動作イメージ（2026/7/8時点）
-<img width="1447" height="710" alt="image" src="https://github.com/user-attachments/assets/dd2057af-dc6f-494b-be7e-32a9bcc5f85d" />
+# 動作イメージ（2026/7/9時点）
+<img width="1254" height="701" alt="image" src="https://github.com/user-attachments/assets/7dd61a95-a0c9-4d87-9acf-ad2328f01c84" />
 
 
 # ライブラリ・素材
