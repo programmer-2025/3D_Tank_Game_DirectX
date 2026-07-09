@@ -8,4 +8,3 @@
 # ライブラリ・素材
 * デバック表示：ImGUI（ライセンス：MITLicense）
 * モデル作成：Blender
-* テクスチャ： Minecraft
