@@ -6,4 +6,6 @@ namespace GameEngine {
 	inline const float BACKGROUND_COLOR[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 
 	HWND GetWindowHandle();
+	bool CanExit();
+	void Exit();
 }

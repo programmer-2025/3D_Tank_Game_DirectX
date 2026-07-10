@@ -26,9 +26,18 @@ using namespace DirectX3DManager;
 namespace GameEngine {
 	HWND hwnd = {};
 	float deltaTime = 0.0f;
+	bool canExit = false;
 
 	HWND GetWindowHandle() {
 		return hwnd;
+	}
+
+	bool CanExit() {
+		return canExit;
+	}
+
+	void Exit() {
+		canExit = true;
 	}
 
 	float GetDeltaTime() {
@@ -53,6 +62,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	MSG msg = {};
 	while (msg.message != WM_QUIT) {
+		if (GameEngine::CanExit()) {
+			break;
+		}
+
 		if (PeekMessage(&msg, NULL, 0U, 0U, PM_REMOVE)) {
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
