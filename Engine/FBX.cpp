@@ -9,11 +9,13 @@
 #include "../GameEngine.hpp"
 #include "LoggerManager.h"
 #include <DirectXCollision.h>
+#include <filesystem>
 
 using namespace DirectX3DManager;
 
 using namespace fbxsdk;
 using namespace DirectX;
+namespace fs = std::filesystem;
 
 FBX::FBX(const std::string fName)
 	: BaseObject("FBX") {
@@ -33,6 +35,12 @@ FBX::~FBX() {
 }
 
 void FBX::Init() {
+	if (!fs::exists(path_)) {
+		MessageBox(NULL, "FBXファイルが存在しません。", NULL, MB_OK);
+		GameEngine::Exit();
+		return;
+	}
+
 	fbxManager_ = FbxManager::Create();
 	fbxImporter_ = FbxImporter::Create(fbxManager_, "imp");
 	fbxImporter_->Initialize(path_.c_str(), -1, fbxManager_->GetIOSettings());
